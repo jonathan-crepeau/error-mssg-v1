@@ -33,7 +33,7 @@ main {
     padding: 45px;
 }
 
-#signup-form input {
+.input-field {
     width: 100%;
     border: none;
     outline: none;
@@ -42,6 +42,12 @@ main {
     padding: 15px;
     box-sizing: border-box;
     font-size: 14px;
+
+    transition: all 0.2s ease;
+}
+
+.input-field::placeholder {
+    color: black;
 }
 
 #signup-btn {
@@ -52,6 +58,34 @@ main {
     background-color: lightcoral;
     font-size: 14px;
     text-transform: uppercase;
-    border-radius: 5px;
-    
+    border-radius: 5px;   
+}
+
+.input-error {
+    border: 2px solid #c21f34;
+    background-color: #ebbcc2;
+}
+
+.input-error::placeholder {
+    color: black;
+    font-weight: 600;
+    letter-spacing: 0.px;
+}
+
+.alert {
+    margin: -13px 10px 10px;
+    float: left;
+    box-sizing: border-box;
+    color: #c21f34;
+    transition: all 0.2s ease;
+    /* margin: -10px auto 10px;
+    box-sizing: border-box;
+    padding: 5px;
+    margin: -15px 0 10px;
+    width: 100%;
+    float: left;
+    color: #c21f34;
+    border-radius: 4px;
+
+    transition: all 0.2s ease; */
 }
